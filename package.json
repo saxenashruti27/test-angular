@@ -1,20 +1,48 @@
 {
-  "name": "test-angular",
-  "version": "0.0.1",
-  "description": "Angular Test",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo 'tests not implemented';",
-    "serve": "node node_modules/json-server/bin/index.js --watch data/db.json --static public"
-  },
+  "name": "bof-fe-test",
+  "author": "BoF",
+  "version": "0.0.2",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "github.com/bof-ci/test-angular"
   },
-  "author": "BoF",
-  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run server\" \"npm run serve\"",
+    "ng": "ng",
+    "serve": "ng serve",
+    "build": "ng build --prod",
+    "lint": "ng lint",
+    "server": "node node_modules/json-server/bin/index.js --watch data/db.json --static public"
+  },
+  "private": true,
   "dependencies": {
-    "bower": "^1.8.0",
-    "json-server": "^0.9.4"
+    "@angular/animations": "^5.2.0",
+    "@angular/common": "^5.2.0",
+    "@angular/compiler": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "@angular/forms": "^5.2.0",
+    "@angular/http": "^5.2.0",
+    "@angular/platform-browser": "^5.2.0",
+    "@angular/platform-browser-dynamic": "^5.2.0",
+    "@angular/router": "^5.2.0",
+    "bootstrap": "^4.1.1",
+    "core-js": "^2.4.1",
+    "jquery": "^3.3.1",
+    "json-server": "^0.9.4",
+    "popper.js": "^1.14.3",
+    "rxjs": "^5.5.6",
+    "zone.js": "^0.8.19"
+  },
+  "devDependencies": {
+    "@angular/cli": "1.6.8",
+    "@angular/compiler-cli": "^5.2.0",
+    "@angular/language-service": "^5.2.0",
+    "@types/node": "~6.0.60",
+    "codelyzer": "^4.0.1",
+    "concurrently": "^3.5.1",
+    "ts-node": "~4.1.0",
+    "tslint": "~5.9.1",
+    "typescript": "~2.5.3"
   }
 }
