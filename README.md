@@ -16,7 +16,7 @@ Instructions & Deliverables
 5. Implement the Story's functionality using the files in 'public' directory
     - Develop a solution which demonstrates your skills and strengths
     - You may add/change/modify any files in the project
-    - You may use any google or other references for angular/bootstrap syntax
+    - You may use Google or any other references for angular/bootstrap syntax
 6. Describe how you can build a better "Product" for this coding task in SOLUTION.md and include your estimates
 7. Create a pull request to origin repository when you are satisfied with your solution (https://help.github.com/articles/about-pull-requests/) 
 
@@ -24,12 +24,12 @@ Instructions & Deliverables
 Other Notes
 -----------
 
-- This test uses Angular 1.5 and Bootstrap 3 but you are free to base it on Angular 1.6 and/or Foundation if that is what you prefer
-- Please remember to demonstrate your skills and how you would normally approach feature development
-- I must ask that you time yourself so that you balance Quality and Delivery. I will not prescribe a
-deadline of X hours, instead, I would like you estimate the task, complete the task, and measure your elapsed time. Please submit your estimate and actual time with your code solution
-- Solution should be fully working when we check out code, make sure you add any additional dependancies you use in package.json or bower.json
-- You can access API docs here: (https://github.com/bof-ci/test-angular/blob/master/API_DOCS.md)
+- This test uses Angular 5 and Bootstrap 4.
+- Please remember to demonstrate your skills and how you would normally approach feature development.
+- Please time yourself so that you balance Quality and Delivery. There will be no deadline for this exercise, but you should instead estimate the task, complete the task, and measure your elapsed time. Please submit your estimate and actual time with your code solution
+- Solution should be fully working when we check out your code.
+- Please make sure any additional dependencies are added in package.json.
+- API docs are available here: (https://github.com/bof-ci/test-angular/blob/master/API_DOCS.md)
 
 
 Requirements / Story Definitions
@@ -37,15 +37,7 @@ Requirements / Story Definitions
 
 ### Technical requirements:
 
-Develop a SPA app (single page app), where profiles are retrieved from the API and where filters can be used to limit the results from the API. Each profile can be edited on a seperate page.
-
-We prepared a starting template to help you get started. Feel free to modify that in any way you see fit. 
-
-Provided templates:
-
-- public/index.html - first page, profile listing
-- public/profile_edit.html - profile editing
-
+Develop a SPA app (single page app), where profiles are retrieved from the API and where filters can be used to limit the results from the API. Each profile can be edited on a seperate page. 
 
 ### Product Requirements:
 
@@ -113,25 +105,15 @@ AND  I expect the data to be saved
 Technical Setup
 ===============
 
-You will need to have node and npm installed. This test was verified to work on Node v7.5.0.
+You will need to have node and npm installed. This test was verified to work on Node v8.1.4.
 
-1. On the command prompt, run:
-
-    $> cd /path/to/the/test/folder
-
+On the command prompt, run:
+```
     $> npm install
-    $> npm install -g bower
-    $> bower install
-  
+    $> npm start
+```
 
-2. Ensure everything was installed successfully
+Visit the page in http://localhost:4200
+Profile API can be reached at http://localhost:3000
 
-3. Start the environment
 
-    $> npm run-script serve
-
-4. Visit the page in browser
-
-    http://localhost:3000
-
-    You should see a Bootstrap based page
