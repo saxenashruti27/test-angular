@@ -114,6 +114,6 @@ On the command prompt, run:
 ```
 
 Visit the page in http://localhost:4200
-Profile API can be reached at http://localhost:3000
+Profile API can be reached at http://localhost:3000/profiles
 
 
